@@ -1,16 +1,36 @@
 ---
-
+import Dashboard from "../components/Dashboard.vue";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="A dashboard to view time spent doing various activities."
+    />
+    <meta name="author" content="Tsukimi" />
+    <meta name="robots" content="all" />
+    <title>Time Tracking Dashboard</title>
+
+    <meta name="og:title" content="Time Tracking Dashboard" />
+    <meta
+      name="og:description"
+      content="A dashboard to view time spent doing various activities."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-neutral-very-dark-blue font-rubik flex min-h-screen w-full flex-col items-center justify-center px-6 py-20 text-white"
+  >
+    <Dashboard client:load />
+  </body>
 </html>
