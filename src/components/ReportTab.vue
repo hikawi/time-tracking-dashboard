@@ -17,14 +17,14 @@ defineEmits<{
     >
       <img
         :src="jeremy.src"
+        alt="Jeremy Robson"
         class="size-16 rounded-full ring-2 ring-white lg:size-20 lg:ring-4"
       />
       <div class="flex flex-col justify-center">
         <span class="text-sm text-neutral-pale-blue">Report for</span>
-        <span
-          class="text-2xl font-light leading-tight lg:mb-12 lg:text-[2.5rem]"
-          >Jeremy Robson</span
-        >
+        <h1 class="text-2xl font-light leading-tight lg:mb-12 lg:text-[2.5rem]">
+          Jeremy Robson
+        </h1>
       </div>
     </div>
 
