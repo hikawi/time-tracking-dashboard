@@ -78,10 +78,12 @@ onUnmounted(() => {
         class="flex flex-row items-center justify-between lg:flex-col lg:items-start lg:justify-center lg:leading-normal"
       >
         <span class="text-[2rem] font-light lg:text-[3.5rem]"
-          >{{ current }}hrs</span
+          >{{ current }}hr{{ current == 1 ? "" : "s" }}</span
         >
         <span class="text-nowrap text-base text-neutral-pale-blue"
-          >{{ isTooSmall ? "Last" : lastTerm }} - {{ previous }}hrs</span
+          >{{ isTooSmall ? "Last" : lastTerm }} - {{ previous }}hr{{
+            previous == 1 ? "" : "s"
+          }}</span
         >
       </div>
     </div>
